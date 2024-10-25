@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-import {DataFloatingNav}  from "@/app/datainspection/DataFloatingNav";
+import {DataFloatingNav}  from "@/src/app/datainspection/DataFloatingNav";
 import { FaHome } from "react-icons/fa";
 // import Grid from "../components/Grid";
 
-import {navItems} from "@/app/datainspection/data/index";
-import DataClient from "@/app/dataleakage/DataClient";
-import LeakageFeatures from "@/app/dataleakage/leakageFeatures"
-import Footer from "@/components/Footer";
+import {navItems} from "@/src/app/datainspection/data/index";
+import DataClient from "@/src/app/dataleakage/DataClient";
+import LeakageFeatures from "@/src/app/dataleakage/leakageFeatures"
+import Footer from "@/src/components/Footer";
 import LogoTicker from "./LogoTicker";
 // import Navbar from "@/components/ui/Navbar";
-import AgeTestimonials from "@/app/dataleakage/AgeTestimonials";
+import AgeTestimonials from "@/src/app/dataleakage/AgeTestimonials";
 import LeakageHero from "./leakageHero";
 
 export default function Home() {

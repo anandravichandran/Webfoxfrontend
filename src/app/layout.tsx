@@ -1,6 +1,6 @@
 
-import { FloatingNav } from "@/components/FloatingNav";
-import { navItems } from "@/data";
+import { FloatingNav } from "@/src/components/FloatingNav";
+import { navItems } from "@/src/data";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

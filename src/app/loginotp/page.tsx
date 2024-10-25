@@ -3,7 +3,7 @@
 import React, { useState,useEffect } from 'react';
 import { useRouter } from "next/navigation";
 import { Spotlight } from "../login/ui/Spotlight";
-import MagicButton from "@/components/ui/MagicButton";
+import MagicButton from "@/src/components/ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from 'next/link';
 import { Button } from "../login/ui/MovingBorder";

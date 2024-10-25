@@ -1,12 +1,12 @@
 "use client";
 import { IoCopyOutline } from "react-icons/io5";
-import { cn } from "@/utils/cn";
+import { cn } from "@/src/utils/cn";
 import { useState } from "react";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import {GlobeDemo} from "./GridGlobe";
-import animationData from '@/data/confetti.json';
+import animationData from '@/src/data/confetti.json';
 import Lottie from "react-lottie";
-import MagicButton from "@/components/ui/MagicButton";
+import MagicButton from "@/src/components/ui/MagicButton";
 
 
 

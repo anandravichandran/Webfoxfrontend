@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import {Spotlight} from '@/components/ui/Spotlight';
+import {Spotlight} from '@/src/components/ui/Spotlight';
 // import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 // import MagicButton from "./ui/MagicButton";
 import HeroAnimation from './HeroAnimation'

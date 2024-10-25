@@ -1,5 +1,5 @@
 "use client";
-import { features } from "@/app/dataleakage/data/leakageindex";
+import { features } from "@/src/app/dataleakage/data/leakageindex";
 import Chip from "./ui/Chip";
 import GradientH2 from "./ui/GradientH2";
 import SectionText from "./ui/SectionText";

@@ -1,6 +1,6 @@
 "use client";
 
-import { logos } from "@/app/dataleakage/data/leakageindex";
+import { logos } from "@/src/app/dataleakage/data/leakageindex";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

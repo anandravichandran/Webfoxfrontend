@@ -6,18 +6,18 @@
 // import { signOut, useSession } from "next-auth/react";
 // import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 // import Image from "next/image";
-// import Hero from "@/components/Hero";
-// import Grid from "@/components/Grid";
-// import RecentProjects from "@/components/RecentProjects";
-// import { navItems } from "@/data";
-// import Client from "@/components/Clinet";
-// import Experience from "@/components/Experience";
-// import Approach from "@/components/Approach";
-// import Footer from "@/components/Footer";
-// // import DataHero from "@/components/DataInspection/DataHero";
-// // import Casestudy from "@/components/DataInspection/Casestudy";
-// import { cn } from "@/utils/cn";
-// import { Button } from "@/components/ui/MovingBorder";
+// import Hero from "@/src/components/Hero";
+// import Grid from "@/src/components/Grid";
+// import RecentProjects from "@/src/components/RecentProjects";
+// import { navItems } from "@/src/data";
+// import Client from "@/src/components/Clinet";
+// import Experience from "@/src/components/Experience";
+// import Approach from "@/src/components/Approach";
+// import Footer from "@/src/components/Footer";
+// // import DataHero from "@/src/components/DataInspection/DataHero";
+// // import Casestudy from "@/src/components/DataInspection/Casestudy";
+// import { cn } from "@/src/utils/cn";
+// import { Button } from "@/src/components/ui/MovingBorder";
 
 
 // export const FloatingNav = ({
@@ -140,8 +140,8 @@
 // import { usePathname } from "next/navigation";
 // import { useMotionValueEvent, useScroll, motion, AnimatePresence } from "framer-motion";
 // import Image from "next/image";
-// import { cn } from "@/utils/cn";
-// import { Button } from "@/components/ui/MovingBorder";
+// import { cn } from "@/src/utils/cn";
+// import { Button } from "@/src/components/ui/MovingBorder";
 
 "use client";
 import React, { useState } from "react";
@@ -150,18 +150,18 @@ import { usePathname } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import Image from "next/image";
-import Hero from "@/components/Hero";
-// import Grid from "@/components/Grid";
-import RecentProjects from "@/components/RecentProjects";
-import { navItems } from "@/data";
-import Client from "@/components/Clinet";
-import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
-import Footer from "@/components/Footer";
-// import DataHero from "@/components/DataInspection/DataHero";
-// import Casestudy from "@/components/DataInspection/Casestudy";
-import { cn } from "@/utils/cn";
-import { Button } from "@/components/ui/MovingBorder";
+import Hero from "@/src/components/Hero";
+// import Grid from "@/src/components/Grid";
+import RecentProjects from "@/src/components/RecentProjects";
+import { navItems } from "@/src/data";
+import Client from "@/src/components/Clinet";
+import Experience from "@/src/components/Experience";
+import Approach from "@/src/components/Approach";
+import Footer from "@/src/components/Footer";
+// import DataHero from "@/src/components/DataInspection/DataHero";
+// import Casestudy from "@/src/components/DataInspection/Casestudy";
+import { cn } from "@/src/utils/cn";
+import { Button } from "@/src/components/ui/MovingBorder";
 
 export const FloatingNav = ({
   navItems,

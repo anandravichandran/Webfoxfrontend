@@ -1,6 +1,6 @@
 "use client";
 
-import { leakagetestimonials } from "@/app/dataleakage/data/leakageindex";
+import { leakagetestimonials } from "@/src/app/dataleakage/data/leakageindex";
 import Chip from "./ui/Chip";
 import GradientH2 from "./ui/GradientH2";
 import SectionText from "./ui/SectionText";

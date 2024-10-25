@@ -1,5 +1,5 @@
 // import { quotes } from "@/public";
-import { FeedBackProps } from "@/app/phishingwebsite/data/index";
+import { FeedBackProps } from "@/src/app/phishingwebsite/data/index";
 import Image from "next/image";
 
 const FeedbackCard: React.FC<FeedBackProps> = ({

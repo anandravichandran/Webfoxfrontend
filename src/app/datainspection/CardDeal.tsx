@@ -1,6 +1,6 @@
 import card  from "@/public/card.png";
-import styles, { layout }from "@/app/datainspection/data/style";
-import Button from "@/components/ui/MagicButton";
+import styles, { layout }from "@/src/app/datainspection/data/style";
+import Button from "@/src/components/ui/MagicButton";
 import Image from "next/image";
 const CardDeal: React.FC = () => (
   <section className={layout.section}>

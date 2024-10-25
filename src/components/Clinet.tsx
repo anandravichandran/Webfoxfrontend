@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
-import {InfiniteMovingCards} from '@/components/ui/InfiniteMovingCards'
-import{companies,testimonials} from "@/data"
+import {InfiniteMovingCards} from '@/src/components/ui/InfiniteMovingCards'
+import{companies,testimonials} from "@/src/data"
 
 
 const Client = () => {

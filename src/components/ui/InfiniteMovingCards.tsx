@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/src/utils/cn";
 import React, { useEffect, useState } from "react";
 import { FaUser } from "react-icons/fa"; // Fallback icon
 
@@ -148,7 +148,7 @@ export const InfiniteMovingCards = ({
 
 // "use client";
 
-// import { cn } from "@/utils/cn";
+// import { cn } from "@/src/utils/cn";
 // import React, { useEffect, useState } from "react";
 // import { FaUser } from "react-icons/fa"; // Import a fallback icon
 

@@ -1,5 +1,5 @@
 import bill from "@/public/bill.png";
-import styles, { layout } from "@/app/datainspection/data/style";
+import styles, { layout } from "@/src/app/datainspection/data/style";
 import Image from "next/image";
 const Billing: React.FC = () => (
   <section id="product" className={layout.sectionReverse}>

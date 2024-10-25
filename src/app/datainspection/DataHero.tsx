@@ -54,8 +54,8 @@
 // }
 
 import React from 'react'
-import {Spotlight} from '@/components/ui/Spotlight'
-import styles from "@/app/datainspection/data/style";
+import {Spotlight} from '@/src/components/ui/Spotlight'
+import styles from "@/src/app/datainspection/data/style";
 import Image from "next/image";
 import demo from "@/public/demo.svg";
 import datainspectionpage from "@/public/datainspectionpage.gif"

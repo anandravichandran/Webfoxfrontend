@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
-import {InfiniteMovingCards} from '@/components/ui/InfiniteMovingCards'
-import{phishingcompanies,phishingtestimonials} from "@/app/phishingwebsite/data/index"
+import {InfiniteMovingCards} from '@/src/components/ui/InfiniteMovingCards'
+import{phishingcompanies,phishingtestimonials} from "@/src/app/phishingwebsite/data/index"
 
 
 const PhishingClient = () => {

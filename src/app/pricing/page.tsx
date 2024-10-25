@@ -1,7 +1,7 @@
 
-import {DataFloatingNav}  from "@/app/datainspection/DataFloatingNav";
-import {navItems} from "@/app/datainspection/data/index";
-import PriceFooter from "@/app/pricing/priceFooter";
+import {DataFloatingNav}  from "@/src/app/datainspection/DataFloatingNav";
+import {navItems} from "@/src/app/datainspection/data/index";
+import PriceFooter from "@/src/app/pricing/priceFooter";
 import Pricing from "./PricingHero";
 
 

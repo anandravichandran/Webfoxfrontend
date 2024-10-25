@@ -1,14 +1,14 @@
 // "use client";
 
-// import { pricing } from "@/app/pricing/constants/index";
-// import Chip from "@/app/pricing/Chip";
-// import GradientH2 from "@/app/pricing/GradientH2";
-// import SectionText from "@/app/pricing/SectionText";
+// import { pricing } from "@/src/app/pricing/constants/index";
+// import Chip from "@/src/app/pricing/Chip";
+// import GradientH2 from "@/src/app/pricing/GradientH2";
+// import SectionText from "@/src/app/pricing/SectionText";
 // import { FaCheck } from "react-icons/fa"; // Import from react-icons
 // import { twMerge } from "tailwind-merge";
 // import { motion } from "framer-motion";
 // import Image from "next/image"; // Using next/image for SVG
-// import {Spotlight} from "@/components/ui/Spotlight";
+// import {Spotlight} from "@/src/components/ui/Spotlight";
 
 // interface PricingItem {
 //   title: string;
@@ -152,16 +152,16 @@
 
 "use client";
 
-import { pricing } from "@/app/pricing/constants/index";
-import Chip from "@/app/pricing/Chip";
-import GradientH2 from "@/app/pricing/GradientH2";
-import SectionText from "@/app/pricing/SectionText";
+import { pricing } from "@/src/app/pricing/constants/index";
+import Chip from "@/src/app/pricing/Chip";
+import GradientH2 from "@/src/app/pricing/GradientH2";
+import SectionText from "@/src/app/pricing/SectionText";
 import { FaCheck } from "react-icons/fa"; // Import from react-icons
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import Image from "next/image"; // Using next/image for SVG
-import {Spotlight} from "@/components/ui/Spotlight";
-import {TextGenerateEffect} from "@/components/ui/TextGenerationEffect";
+import {Spotlight} from "@/src/components/ui/Spotlight";
+import {TextGenerateEffect} from "@/src/components/ui/TextGenerationEffect";
 interface PricingItem {
   title: string;
   monthlyPrice: number;

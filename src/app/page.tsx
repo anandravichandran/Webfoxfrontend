@@ -2,19 +2,19 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Hero from "@/components/Hero";
+import Hero from "@/src/components/Hero";
 
-import RecentProjects from "@/components/RecentProjects";
-import { navItems } from "@/data";
-import Client from "@/components/Clinet";
-import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
-import Footer from "@/components/Footer";
-import {FloatingNav}from "@/components/FloatingNav";
-// import DataHero from "@/components/DataInspection/DataHero";
-// import Casestudy from "@/components/DataInspection/Casestudy";
-import { cn } from "@/utils/cn";
-import { Button } from "@/components/ui/MovingBorder";
+import RecentProjects from "@/src/components/RecentProjects";
+import { navItems } from "@/src/data";
+import Client from "@/src/components/Clinet";
+import Experience from "@/src/components/Experience";
+import Approach from "@/src/components/Approach";
+import Footer from "@/src/components/Footer";
+import {FloatingNav}from "@/src/components/FloatingNav";
+// import DataHero from "@/src/components/DataInspection/DataHero";
+// import Casestudy from "@/src/components/DataInspection/Casestudy";
+import { cn } from "@/src/utils/cn";
+import { Button } from "@/src/components/ui/MovingBorder";
 
 export default function Home() {
   return (

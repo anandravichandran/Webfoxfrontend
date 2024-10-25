@@ -1,5 +1,5 @@
 import React from 'react'
-import { workExperience } from '@/data';
+import { workExperience } from '@/src/data';
 import {Button} from "./ui/MovingBorder"
 
 const Experience = () => {

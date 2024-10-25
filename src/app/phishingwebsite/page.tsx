@@ -1,9 +1,9 @@
 
-import Comparision from "@/app/phishingwebsite/Comparision";
-import PhishingClinet from "@/app/phishingwebsite/PhishingClinet";
-import Footer from "@/components/Footer"
-import {PhishingFloatingNav} from "@/app/phishingwebsite/PhishingFloatingNav";
-import {navItems} from "@/data/index";
+import Comparision from "@/src/app/phishingwebsite/Comparision";
+import PhishingClinet from "@/src/app/phishingwebsite/PhishingClinet";
+import Footer from "@/src/components/Footer"
+import {PhishingFloatingNav} from "@/src/app/phishingwebsite/PhishingFloatingNav";
+import {navItems} from "@/src/data/index";
 import HeroPhising from "./HeroPhishing";
 import PhishFooter from "./PhishFooter";
 export default function Home() {

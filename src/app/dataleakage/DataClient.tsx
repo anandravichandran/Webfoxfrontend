@@ -47,8 +47,8 @@
 
 "use client";
 import React from "react";
-import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
-import { datacompanies, datatestimonials } from "@/app/dataleakage/data/leakageindex";
+import { InfiniteMovingCards } from "@/src/components/ui/InfiniteMovingCards";
+import { datacompanies, datatestimonials } from "@/src/app/dataleakage/data/leakageindex";
 
 const DataClient = () => {
   const mappedTestimonials = datatestimonials.map((testimonial) => ({

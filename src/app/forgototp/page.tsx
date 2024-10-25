@@ -314,7 +314,8 @@ const Forgototp: React.FC = () => {
       setFormData({ email: formData.email, otp: '' });
       setOtp(Array(6).fill(''));
       console.log('Verify successful');
-      router.push(`/resetpassword/${formData.email}`);
+      // router.push(`/resetpassword/${formData.email}`);
+      router.push(`/resetpassword?email=${formData.email}`);
     } catch (error) {
       console.log(error);
     }

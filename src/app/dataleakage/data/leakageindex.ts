@@ -115,66 +115,39 @@ export const navItems = [
         "A data loss at MedSecure in September 2024 resulted in the exposure of 5 million patients' personal and clinical data. The hack compromised Social Security numbers, insurance information, and names through spoofing. This year, there has been a 40% increase in healthcare data thefts; the projected financial effect is $100 million.",
       name: "MedSecure Assets Exposure Incident",
       title: "Targeted healthcare sector for sensitive personal and medical data.",
+      img:"",
     },
     {
       quote:
         "Information theft is still a significant risk to the financial industry in 2024, since attacks are becoming more frequent and severe. Financial institutions were the subject of 80% more interactive intrusions and a 71% increase in stolen credentials theft in 2023. Significant exposures impacting up to 60 million records can be expected to cost $332 million, negatively impacting business operations and reputation.",
       name: "Credential Theft & Interactive Intrusions",
       title: "Crucial rise in cyberattacks and stolen credentials impacting finances.",
+      
     },
     {
       quote:
        " With 69 breaches last year, 90% of which were instigated by outside parties seeking financial advantage, the food business is increasingly vulnerable to information theft. Web application exploits, psychological manipulation, and system penetration are important attack techniques that frequently target personal and payment information. There is a clear need for improved cybersecurity in light of high-profile attacks on delivery services and restaurant chains.",
       name: "Multi-vector Data Stolen Attack",
       title: "Involves external financial motives using system penetration and social engineering",
+     
     },
     {
       quote:
         "Early in 2024, 60 million SocialConnect users had their names, emails, phone numbers, and hashed passwords compromised due to a hacking incident. With an average detection time of 277 days, the attack, which is linked to APT34, underscores the rising threats of data theft. It is anticipated that the impacted companies will pay more than $5.3 billion in 2024.",
       name: "SocialConnect Records Exposure",
       title: "The APT34 hacking group exploited vulnerabilities for massive data theft.",
+      
     },
     {
       quote:
         "The personal information of ten million teachers and students—including names, contact information, Social Security numbers, and academic records—was compromised in a hack at the EdTech business PowerSchool in July 2023. The event brought attention to flaws in educational technology and spurred demands for more robust cybersecurity and stringent data protection laws.",
       name: "PowerSchool Information Leak",
       title: "Exploitation of security vulnerabilities in educational technology systems.",
-      img: "./"
+      
     },
   ];
   
-  export const datacompanies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+ 
   
   export const workExperience = [
     {
@@ -243,50 +216,50 @@ import leaf from "../assets/leaf.svg";
 import pointer from "../assets/pointer.svg";
 import lock from "../assets/lock.svg";
 import notification from "../assets/notification.svg";
-import acme from "../assets/logo-acme.png";
-import quantum from "../assets/logo-quantum.png";
-import echo from "../assets/logo-echo.png";
-import celestial from "../assets/logo-celestial.png";
-import pulse from "../assets/logo-pulse.png";
-import apex from "../assets/logo-apex.png";
-import puzzle from "../assets/puzzle.png";
-import square from "../assets/square.png";
+import datalogs1 from "../assets/datalogs1.png";
+import datalog2 from "../assets/datalog2.png";
+import datalog3 from "../assets/datalog3.png";
+import datalog4 from "../assets/datalog4.png";
+import datalog6 from "../assets/datalog6.png";
+import datalog5 from "../assets/datalog5.png";
+import leakage3 from "../assets/leakage3.png";
+import leakage2 from "../assets/leakage2.png";
 
 export const logos = [
   {
-    src: acme,
+    src: datalogs1,
     alt: "acme",
   },
   {
-    src: quantum,
+    src: datalog2,
     alt: "quantum",
   },
   {
-    src: echo,
+    src: datalog3,
     alt: "echo",
   },
   {
-    src: celestial,
+    src: datalog4,
     alt: "celestial",
   },
   {
-    src: pulse,
+    src: datalog5,
     alt: "pulse",
   },
   {
-    src: apex,
+    src: datalog6,
     alt: "apex",
   },
 ] as const;
 
 export const features = [
   {
-    src: puzzle,
+    src: leakage3,
     title: "Comprehensive Threat Detection and Contextual Awareness",
     desc: "",
   },
   {
-    src: square,
+    src: leakage2,
     title: "Harnessing AI and Machine Learning for Confidentiality breach Prevention",
     desc: "",
   },

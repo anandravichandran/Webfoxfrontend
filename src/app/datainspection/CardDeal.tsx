@@ -1,4 +1,4 @@
-import card  from "@/public/card.png";
+import DataInspectionpdf  from "@/public/DataInspectionpdf.png";
 import styles, { layout }from "@/src/app/datainspection/data/style";
 import Button from "@/src/components/ui/MagicButton";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const CardDeal: React.FC = () => (
       {/* <Button styles="mt-10" /> */}
     </div>
     <div className={layout.sectionImg}>
-      <Image src={card} alt="card" className="w-[100%] h-[100%]" />
+      <Image src={DataInspectionpdf} alt="card" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );

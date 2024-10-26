@@ -44,30 +44,35 @@ export const InspectionTestimonials = [
       "A substantial hospital network suffered a data breach in May 2024 that made the medical records of more than 1.8 million patients public. Due to inadequate examination procedures that were unable to identify illegal access, the breach happened. The aforementioned occurrence highlights the pressing requirement for more rigorous auditing methods and continuous monitoring to safeguard confidential patient data within the healthcare industry.",
       name: "Data Inspection Breach in Healthcare",
       title: "The breach happened as a result of inadequate  inspection that overlooked unwanted access.",
+      img:"/datainspectioncasestduy2.jpeg",
   },
   {
     quote:
       "The Financial Cybersecurity Authority (FCA) reported in 2024 that data checking failures had increased by 35% from 2023 to 2024. Over 2.5 million clients' financial information was stolen in June due to a massive  breach at a well-known worldwide bank. The incident was ascribed to insufficient content inspection systems that were unable to promptly identify unauthorized access, underscoring the pressing necessity for improved log analysis procedures and monitoring systems within the banking sector.",
       name: "Rise in Information Inspection Failures in Banking Department",
       title: "Inadequate Content Evaluation measures that failed to quickly identify unauthorized access were blamed for the attack.",
+      img:"/datainspectioncasestudy3.jpeg",
   },
   {
     quote:
       "A critical hack that affected a well-known international food retailer in March 2024 exposed over 1.2 million consumers' private and financial information. Insufficient forensic inspection procedures that did not identify illegal access in a timely manner led to the breach. Stronger Data Evaluation procedures and real-time monitoring are desperately needed to protect consumer information in the food industry, as this tragedy has shown.",
       name:"Content Evaluation Malfunctions in Food Industry",
       title: "The hack was brought about by insufficient Data Appraisal procedures that missed detecting unauthorized access promptly.",
+      img:"/Datainspectioncasestudy.jpeg"
   },
   {
     quote:
       "Data Quality Check problems in the technology sector increased by 45% in 2024 over the previous year, per a report published by the Technology Cybersecurity Council (TCC). Over 4 million individuals' personal data was compromised in a particular importance due to resultant that occurred in July 2024 at a reputable cloud services firm. Stronger Information Review systems and real-time monitoring in the tech sector are important, as the hack was traced back to insufficient Information Inspection procedures that were unable to identify unauthorized access.",
       name: "Surge in Information Review Blunders in Tech Category",
       title: "Weak Data Verification systems that were unable to detect illegal access in time were linked to the hack.",
+      img:"/datainsepction4.jpeg",
   },
   {
     quote:
       "As per the Education Cybersecurity Bureau (ECB), there was a fifty percent increase in data inspection failures in the education sector in 2024 when comparing the previous year. Over 1.7 million students' and faculty members' academic and personal information was compromised in a decisive hack that affected several institutions in April 2024. Because out-of-date Information Audit processes were the source of the breach, it is imperative that monitoring and inspection systems be upgraded in order to protect sensitive student data in educational institutions.",
     name: "Data Monitoring Setbacks in Educational field",
     title: "Outdated Information Review procedures that were unable to detect confidential data in a timely manner were the cause of the breach.",
+    img:"/hospitalattack.png",
   },
 ];
 
@@ -75,31 +80,31 @@ export const Incompanies = [
   {
     id: 1,
     name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    img: "/datainspectiongif.gif",
+    // nameImg: "/cloudName.svg",
   },
   {
     id: 2,
     name: "appwrite",
-    img: "/app.svg",
+    img: "/Processor Malware.png",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
     name: "HOSTINGER",
-    img: "/host.svg",
+    img: "/data-loss.png",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
     name: "stream",
-    img: "/s.svg",
+    img: "/Mail Malware.png",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
     name: "docker.",
-    img: "/dock.svg",
+    img: "/file_leakage.png",
     nameImg: "/dockerName.svg",
   },
 ];

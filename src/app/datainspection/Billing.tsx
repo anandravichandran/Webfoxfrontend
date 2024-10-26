@@ -1,13 +1,15 @@
-import bill from "@/public/bill.png";
+import DataInspectiontext from "@/public/DataInspectiontext.png";
+import ServerMalware from "@/public/ServerMalware.png";
+import securitybreach from "@/public/securitybreach.png";
 import styles, { layout } from "@/src/app/datainspection/data/style";
 import Image from "next/image";
 const Billing: React.FC = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <Image
-        src={bill}
+        src={DataInspectiontext}
         alt="billing"
-        className="w-[100%] h-[100%] relative z-[5]"
+        className="w-[85%] h-[85%] relative z-[5]"
       />
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
       <div className="absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient" />
@@ -22,14 +24,14 @@ const Billing: React.FC = () => (
       </p>
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <Image
-          src={""}
+          src={ServerMalware}
           alt="apple_store"
-          className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer"
+          className="w-[108px] h-[108px] object-contain mr-5 cursor-pointer"
         />
         <Image
-          src={""}
+          src={securitybreach}
           alt="google_play"
-          className="w-[128px] h-[42px] object-contain cursor-pointer"
+          className="w-[108px] h-[108px] object-contain cursor-pointer"
         />
       </div>
     </div>

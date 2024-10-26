@@ -1,9 +1,6 @@
 "use client";
 
 import { leakagetestimonials } from "@/src/app/dataleakage/data/leakageindex";
-import Chip from "./ui/Chip";
-import GradientH2 from "./ui/GradientH2";
-import SectionText from "./ui/SectionText";
 import TestimonialCard from "./ui/TestimonialCard";
 import { motion } from "framer-motion";
 
@@ -15,16 +12,6 @@ export default function AgeTestimonials() {
   return (
     <section className="px-3 sm:px-5 md:px-10 xl:px-20 bg-black-100">
       <div className="container mx-auto">
-        <div className="mx-auto max-w-[540px]">
-          <div className=" flex items-center justify-center">
-            <Chip>Testimonials</Chip>
-          </div>
-          <GradientH2 className="text-center">What our users say</GradientH2>
-          <SectionText>
-            From intuitive design to powerful features, our app has become an
-            essential tool for users around the world
-          </SectionText>
-        </div>
         <div className="flex  justify-center items-center gap-6 pb-6 mt-10 max-h-[400px] overflow-hidden  [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
           <TestimonialCard id="col1" duration={15} />
           <TestimonialCard

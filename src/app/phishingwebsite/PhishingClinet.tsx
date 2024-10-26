@@ -20,7 +20,7 @@ const PhishingClient = () => {
             speed='slow'
         />
     </div>
-    <div className="flex flex-wrap items-center justify-center gap-4 p-4 gap-x-24 gap-y-8 md:gap-16 max-lg:mt-10 z-0">
+    {/* <div className="flex flex-wrap items-center justify-center gap-4 p-4 gap-x-24 gap-y-8 md:gap-16 max-lg:mt-10 z-0">
         {phishingcompanies.map((company) => (
             <React.Fragment key={company.id}>
                 <div className="flex md:max-w-60 max-w-32 gap-2 lg:max-w-60">
@@ -38,7 +38,7 @@ const PhishingClient = () => {
                 </div>
             </React.Fragment>
         ))}
-    </div>
+    </div> */}
 </section>
   )
 }

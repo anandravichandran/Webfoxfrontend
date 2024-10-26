@@ -117,14 +117,14 @@ export const navItems = [
         "In 2024, cyber crime surged across various sectors due to security vulnerabilities. Coordinated attacks on critical infrastructure exploited unnoticed system weaknesses, compromising sensitive data and causing severe outages. Companies faced over $5 million each in recovery, legal, and reputational costs. These incidents highlighted the urgent need for robust cybersecurity measures to detect and respond to sophisticated threats in real-time, as only 15% of attacks were identified before causing significant damage.",
       name: "2024 A hike in Cyber Crime Activities",
       title: "A failure in threat detection systems allowed a series of coordinated cyber attacks on critical infrastructure, resulting in widespread disruption.",
-      img:"/casestudyattackmalware.png",
+      img:"/casestudyhomeclouda.png",
     },
     {
       quote:
         " In early 2024, a vulnerability in ScreenConnect (CVE-2024-1708 and CVE-2024-1709) became a critical security issue. Within 48 hours, threat actors exploited the flaw to gain admin privileges. Large-scale groups led the initial attacks, with over 30% involving new malware strains like TODDLERSHARK, TIMBERSTEALER, and ICENOVA. These incidents highlight the need for continuous monitoring and rapid patch deployment to mitigate evolving malware threats.",
       name: "ScreenConnect Vulnerability and Malware Evolution",
       title: "The ScreenConnect vulnerability was exploited quickly due to its public disclosure before patches were applied",
-      img:"/casestudyattackmalware.png",
+      img:"/cardaattackphising.jpeg",
     },
     {
       quote:
@@ -138,12 +138,13 @@ export const navItems = [
         "In early 2024, cyber scams surged, with phishing incidents rising by 30%, targeting cloud services like Google Workspace and Microsoft 365. Sophisticated social engineering bypassed multi-factor authentication, exploiting the increase in remote work. Cloud infrastructure was the target of 45% of reported phishing attacks. Organizations lost an average of $5.1 million per incident due to account compromise, data theft, and ransomware. This underscores the urgent need for robust security measures against phishing in the cloud services industry.",
       name: "2024 Phishing Surge Targeting Cloud-Based Services",
       title: "In 2024, phishing attacks significantly increased, targeting cloud services due to the growing reliance on remote work infrastructure.",
-      img:"/cloud leakage2.png",
+      img:"/homecasestudy1.jpeg",
     },
     {
       quote:
         "In 2024, several e-commerce platforms suffered a major breach due to inadequate data inspection. Unnoticed anomalies in encrypted transaction data exposed 12 million customer records, including payment and personal information. Hackers had weeks to exploit this vulnerability, resulting in $3.8 million in recovery costs, legal fees, and customer compensation per company. The breach highlighted the urgent need for advanced data inspection techniques capable of detecting anomalies in encrypted data.",
       name: " 2024 Data Inspection Breach in E-commerce Platforms",
+      img:"/homecasestudy2.jpeg",
       title: " A data inspection tool failed to detect unusual activity in encrypted transactions, leading to a large-scale breach in sensitive customer information.",
     },
   ];

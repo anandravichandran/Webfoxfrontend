@@ -18,30 +18,35 @@ export const navItems = [
 
       name: "An Increase in Healthcare Phishing Attacks",
       title: "Significant increase in Fake Email Trap targeting healthcare organizations, with a sharp rise in frequency.",
+      img:"/phisingcase2.png"
     },
     {
       quote:
         "The Financial Cybersecurity Agency (FCA) reports that replay attack incidents in the banking industry increased by 50% in 2024 over the previous year. A significant botnet that occurred in June 2024 compromised private data belonging to almost 2 million customers of several large banks. Fraudulent campaigns, which pretended to be official bank correspondence, fooled people into disclosing financial information and login credentials, underscoring the pressing need for improved security protocols and user training.",
       name: "An Influence in Banking Sector Spoofing Incident",
       title: "Sharp surge in Email Fraud incidents targeting the banking industry, with a notable increase in severity",
+      img:"/phisingcase3.png"
     },
     {
       quote:
         "According to the Food Industry Cybersecurity Alliance (FICA), there was a 40% increase in online fraud events in the food industry in 2024 as compared to the previous year. The personal and financial information of over a million consumers was compromised in a significant assault that targeted a number of well-known food stores and suppliers in April 2024. fake emails, which frequently seemed to be order confirmations or promotional offers, fooled recipients into disclosing personal information, underscoring the need for enhanced cybersecurity safeguards and more user caution in the sector",
       name: "Social Engineering Frauds in the Food Industry",
       title: "Notable rise in forgery attacks targeting the food sector, with an increase in heavy impact",
+      img:"/phisingcase4.png"
     },
     {
       quote:
         "In 2024, the Technology Cybersecurity Council (TCC) relayed credential stuffing incidences in the IT industry increased by 60% over the previous year. Sensitive information belonging to almost 3 million individuals was constrained in a significant incident that occurred in July 2024. malicious scam efforts were used to pose as system upgrades or technical help. Attacks are becoming more frequent, which emphasizes the critical need for comprehensive cybersecurity defenses and raised awareness in the tech sector.",
       name: "A hike in Phishing Exploit in Tech Sector",
       title: "Marked increase in Credential theft targeting technology firms, with a significant rise in scale and severity.",
+      img:"/phisingcase5.png"
     },
     {
       quote:
         "Based on a comparison with the previous year, the Education Cybersecurity Bureau (ECB) reports that cybercrime incidences in the education sector increased by 55% in 2024. Over 2 million students' and faculty members' academic and personal information was compromised, causing a loss that struck multiple colleges and institutions in February 2024. The critical need for improved cybersecurity safeguards in education is highlighted by fraud email attempts, which pose as official communications from educational institutions and fool recipients into disclosing login passwords and other sensitive information.",
       name: "Fake Email Trap in Education Sector",
       title: "Significant increase in Fake Email Trap targeting educational institutions, with a notable rise in frequency and impact.",
+      img:"/phisingcase1.png"
     },
   ];
   

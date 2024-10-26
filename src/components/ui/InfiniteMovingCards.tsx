@@ -117,7 +117,7 @@ export const InfiniteMovingCards = ({
                 <div className="me-3">
                   {/* Check if img is a string (URL) or JSX element */}
                   {typeof item.img === 'string' ? (
-                    <img src={item.img} alt={item.name} className="w-10 h-10 rounded-full" />
+                    <img src={item.img} alt={item.name} className="w-11 h-11 rounded-full" />
                   ) : item.img ? (
                     item.img
                   ) : (

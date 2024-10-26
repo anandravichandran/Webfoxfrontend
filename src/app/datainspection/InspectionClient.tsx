@@ -20,14 +20,14 @@ const InspectionClient = () => {
                speed='slow'           
             />
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-4 p-4 gap-x-24 gap-y-8 md:gap-16 max-lg:mt-10" >
+        {/* <div className="flex flex-wrap items-center justify-center gap-4 p-4 gap-x-24 gap-y-8 md:gap-16 max-lg:mt-10" >
           {Incompanies.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2 lg:max-w-60 ">
                 <img
                   src={company.img}
                   alt={company.name}
-                  className="md:w-10 w-5"
+                  className="md:w-20 w-15"
                 />
                 <img
                   src={company.nameImg}
@@ -38,7 +38,7 @@ const InspectionClient = () => {
               </div>
             </React.Fragment>
           ))}
-        </div>
+        </div> */}
     </section>
   )
 }

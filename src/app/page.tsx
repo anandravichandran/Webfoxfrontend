@@ -13,6 +13,7 @@ import Footer from "@/src/components/Footer";
 import {FloatingNav}from "@/src/components/FloatingNav";
 // import DataHero from "@/src/components/DataInspection/DataHero";
 // import Casestudy from "@/src/components/DataInspection/Casestudy";
+import HomeTicker from "@/src/components/HomeTicker";
 import { cn } from "@/src/utils/cn";
 import { Button } from "@/src/components/ui/MovingBorder";
 
@@ -23,8 +24,7 @@ export default function Home() {
         
         <Hero />
         <FloatingNav navItems = {navItems}/>
-        {/* <Navbar/> */}
-        {/* <Grid/> */}
+        <HomeTicker/>
         <RecentProjects/>
         <Client/>
         <Experience/>

@@ -6,13 +6,14 @@ import { FaHome } from "react-icons/fa";
 
 import {navItems} from "@/src/app/datainspection/data/index";
 import DataClient from "@/src/app/dataleakage/DataClient";
-import Dataapproach from "@/src/app/dataleakage/dataapproach";
+import Dataapproach from "@/src/app/dataleakage/Dataapproach";
 import Footer from "@/src/components/Footer";
 import LogoTicker from "./LogoTicker";
 // import Navbar from "@/components/ui/Navbar";
 import LeakageFeatures from "./leakageFeatures";
 import AgeTestimonials from "@/src/app/dataleakage/AgeTestimonials";
 import LeakageHero from "./leakageHero";
+import Leakageapproach from "./Leakageapproach";
 
 export default function Home() {
   return (
@@ -22,9 +23,10 @@ export default function Home() {
         <LeakageHero />
         <DataFloatingNav navItems = {navItems}/>
         <DataClient/>
-        <LeakageFeatures/>
-        <Dataapproach/>
         <LogoTicker/>
+        <Dataapproach/>
+        <LeakageFeatures/>
+        <Leakageapproach/>
         <AgeTestimonials/>
         <Footer/>
        

@@ -1,8 +1,8 @@
 import React from 'react'
-import { workExperience } from '@/src/data';
+import { dataExperience } from '@/src/app/dataleakage/data/leakageindex';
 import {Button} from "@/src/components/ui/MovingBorder";
 
-const Experience = () => {
+const Dataapproach = () => {
     return (
         <div className="py-20 w-full">
           <h1 className="heading">
@@ -10,7 +10,7 @@ const Experience = () => {
           </h1>
     
           <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-            {workExperience.map((card) => (
+            {dataExperience.map((card) => (
               <Button
                 key={card.id}
                 //   random duration will be fun , I think , may be not
@@ -50,4 +50,4 @@ const Experience = () => {
       );
     };
 
-export default Experience
+export default Dataapproach

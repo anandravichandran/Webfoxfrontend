@@ -45,23 +45,17 @@ function Testimonial({ item }: { item: any }) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "linear" }}
-      className="p-10 border max-w-xs w-full border-violet-500/10 rounded-3xl bg-white shadow-[0_7px_14px_rgba(138,43,226,0.5)]"
+      className="p-10 border max-w-xs w-full border-violet-500/10 rounded-3xl bg-black-100 shadow-[0_7px_14px_rgba(18, 1, 34, 0.966)]"
     >
       <div>{item.text}</div>
-      <figure className="flex items-center gap-2 mt-5">
+      <figure className="flex gap-2 mt-5">
         <Image
           src={item.imageSrc}
           alt={item.username}
-          width={40}
-          height={40}
-          className="size-10 rounded-full"
+          width={100}
+          height={100}
+          className="size-60 border"
         />
-        <figcaption className="flex flex-col">
-          <div className="font-medium tracking-tight leading-5">
-            {item.name}
-          </div>
-          <div className="leading-5 tracking-tight">{item.username}</div>
-        </figcaption>
       </figure>
     </motion.div>
   );

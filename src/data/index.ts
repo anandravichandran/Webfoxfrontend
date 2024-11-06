@@ -124,28 +124,28 @@ export const navItems = [
       title: "How Does Webfoxshield Work to Ensure Data Security?",
       desc: "Webfoxshield uses AI, machine learning, and Natural Language Processing (NLP) to scan text, PDFs, images, and emails for sensitive data, detecting potential leaks, malware, and phishing threats in real-time. It cross-references data with extensive databases and provides instant alerts, enabling users to easily monitor and secure their information.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "exp1.png",
     },
     {
       id: 2,
       title: "Is the extension easy to use?",
       desc: "Yes! Our user-friendly interface is designed for simplicity and ease of use. You don’t need any technical expertise to navigate the tool, and we provide a Wide-range of resources to assist you.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      thumbnail: "/exp2.png",
     },
     {
       id: 3,
       title: "How quickly will I be notified of any threats?",
       desc: "Our extension provides real-time alerts as soon as it detects any potential threats or vulnerabilities. This instant notification allows you to respond quickly and mitigate risks effectively.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
+      thumbnail: "/exp3.png",
     },
     {
       id: 4,
       title: "Will my data remain secure while using your extension?",
       desc: "Yes, your data is our priority. Our extension does not store sensitive information and employs industry-standard encryption and security protocols to ensure that your data remains confidential and protected at all times.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/exp4.png",
     },
   ];
   

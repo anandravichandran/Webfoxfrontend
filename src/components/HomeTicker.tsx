@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function HomeTicker() {
   return (
-    <section className="px-6 sm:px-10 md:px-15 xl:px-25 py-15 md:py-12 bg-back-200 -translate-y-40">
+    <section className="px-6 sm:px-10 md:px-15 xl:px-25 py-15 md:py-12 bg-back-200 -translate-y-4">
       <div className="container mx-auto">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.figure

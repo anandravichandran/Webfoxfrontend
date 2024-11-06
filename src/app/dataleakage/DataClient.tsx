@@ -58,9 +58,9 @@ const DataClient = () => {
 
   return (
     <section className="py-20">
-      <h1 className="heading">
-        Kind Words from <span className="text-purple">Satisfied Clients</span>
-      </h1>
+      <h3 className="heading">
+       Data’s safety amidst last year’s <span className="text-purple">Trillion-record Breaches.</span>
+      </h3>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         <InfiniteMovingCards items={mappedTestimonials} direction="right" speed="slow" 
            

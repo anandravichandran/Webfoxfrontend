@@ -12,6 +12,8 @@ import { LoginFloatingNav } from "./ui/LoginFloatingNav";
 import { Button } from "./ui/MovingBorder";
 import { MdLockOutline, MdVisibility, MdVisibilityOff } from 'react-icons/md';
 import axios from 'axios';
+import "react-toastify/dist/ReactToastify.css" // React Toastify
+import {ToastContainer} from 'react-toastify'; // Import the ToastContainer
 
      // Define the User type
 interface User {
@@ -20,30 +22,51 @@ interface User {
   password: string;
 }
 
-// const fetchProtectedData = async () => {
-//   if (typeof window !== 'undefined' && (window as any).chrome && chrome.storage && chrome.storage.local) {
-//       chrome.storage.local.get('token', async function(result) {
-//           const token = result.token;
+// Define the structure of the expected response from the API
+interface LoginResponse {
+  token: string;
+}
 
-//           const response = await fetch('/api/protected', {
-//               method: 'GET',
-//               headers: {
-//                   'Authorization': `Bearer ${token}`,
-//               },
-//           });
+// Function to store token in Chrome local storage
+const setToken = (token: string): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    chrome.storage.local.set({ token }, () => {
+      if (chrome.runtime.lastError) {
+        reject(chrome.runtime.lastError);
+      } else {
+        resolve();
+      }
+    });
+  });
+};
 
-//           const data = await response.json();
-//           if (response.ok) {
-//               console.log('Protected data:', data);
-//           } else {
-//               console.log(data.message);
-//           }
-//       });
-//   } else {
-//       console.log('Chrome storage is not available.');
-//   }
-// };
+const fetchProtectedData = async () => {
+  if (typeof window !== 'undefined' && window.chrome?.storage?.local) {
+    chrome.storage.local.get('token', async (result) => {
+      const token = result.token;
 
+      if (token) {
+        const response = await fetch('http://localhost:5000/api/protected', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+          console.log('Protected data:', data);
+        } else {
+          console.log(data.message);
+        }
+      } else {
+        console.log('Token not found in Chrome storage');
+      }
+    });
+  } else {
+    console.log('Chrome storage is not available.');
+  }
+};
 const Login: React.FC = () => {
   const router = useRouter(); // For routing after successful login
 
@@ -97,24 +120,38 @@ const Login: React.FC = () => {
 
       try {
           // Make request to the backend for authentication
-          const response = await axios.post('http://localhost:5000/login', {
+          const response = await axios.post<LoginResponse>('http://localhost:5000/login', {
               name: formData.name,
               email: formData.email,
               password: formData.password,
           });
 
-          if (response.status === 200) {
-              // Store token in Chrome storage if available
-              // if (typeof window !== 'undefined' && (window as any).chrome && chrome.storage && chrome.storage.local) {
-              //     chrome.storage.local.set({ token: response.data.token }, () => {
-                     
-              //     });
-              // } else {
-              //     console.log('Chrome storage is not available.');
-              // }
+          // if (response.status === 200) {
+          //     // Store token in Chrome storage if available
+          //     if (typeof window !== 'undefined' && window.chrome && chrome.storage && chrome.storage.local) {
+          //       chrome.storage.local.set({ token: response.data.token }, () => {
+          //           console.log('Token stored in Chrome storage');
+          //       });
 
+          //     } else {
+          //         console.log('Chrome storage is not available.');
+          //     }
+
+          if (response.status === 200) {
+            const token = response.data.token;
+            console.log('Received token:', token);
+    
+            if (typeof window !== 'undefined' && window.chrome?.storage?.local) {
+              await setToken(token);
+              console.log('Token stored in Chrome storage');
+            } else {
+              console.log('Chrome storage is not available.');
+            }
+    
+               // Fetch protected data after successful login
+                 await fetchProtectedData();
               // Redirect to the OTP page after successful login
-              router.replace('/loginotp');
+              router.push('/');
           } else {
               setErrors({ ...errors, email: 'Invalid email or password' });
           }
@@ -156,7 +193,7 @@ const Login: React.FC = () => {
           {/* Sign In Section */}
           <div className="w-3/5 p-5">
             <div className="text-left font-bold">
-              <span className="text-blue-950">Company</span>Name
+              <span className="text-blue-950">WebFoxShield</span>
             </div>
             <div className="py-10">
               <h2 className="text-3xl font-bold text-blue-950 mb-2">Sign in to Account</h2>
@@ -267,6 +304,7 @@ const Login: React.FC = () => {
           </div>
         </LoginFloatingNav>
       </div>
+      <ToastContainer/>
     </div>
 
   );

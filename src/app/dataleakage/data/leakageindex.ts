@@ -119,15 +119,15 @@ export const navItems = [
   export const dataExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Hacking and Malware Attacks",
+      desc: "Cybercriminals use deceptive emails, messages, or websites to trick users into revealing personal information, such as login credentials,Interconnected digital landscape, safeguarding personal and sensitive information has never been more critical. Our Chrome extension offers a cutting-edge solution to detect potential data leakage and provide detailed reports",
       className: "md:col-span-2",
       thumbnail: "/exp5.png",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Insider Threats",
+      desc: "Employees or insiders with access to sensitive data may intentionally or unintentionally disclose information, leading to breaches,Detection: If user credentials are found in breach records involving insider threats, the extension provides specific reports on which company or service was affected and the nature of the leak.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp6.png",
     },
@@ -139,15 +139,15 @@ export const navItems = [
   export const leakageExperience = [
         {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Unsecured Data Storage",
+      desc: "Organizations sometimes store data without proper encryption or protection, making it accessible to attackers who search for unprotected databases.Breaches originated from third-party services tied to the user’s information. It provides details on which vendors or platforms were involved and what data was affected.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp7.png",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Third-Party Vulnerabilities",
+      desc: "Companies that work with third-party vendors can face data breaches if those partners have weak security practices.If breaches originated from third-party services tied to the user’s information. It provides details on which vendors or platforms were involved and what data was affected.",
       className: "md:col-span-2",
       thumbnail: "/exp8.png",
     },
@@ -227,69 +227,69 @@ export const logos = [
 export const features = [
   {
     src: leakage3,
-    title: "Comprehensive Threat Detection and Contextual Awareness",
+    title: "Protect your online identity with real-time data breach detection and alerts stay informed and secure",
     desc: "",
   },
   {
     src: leakage2,
-    title: "Harnessing AI and Machine Learning for Confidentiality breach Prevention",
+    title: "Stay one step ahead of cybercriminals—detect data breaches involving your credentials before they cause damage ",
     desc: "",
   },
 ];
 export const leakagetestimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    text: "Users receive comprehensive breach details, including the date of the incident, affected platforms, and types of compromised data (e.g., passwords, email addresses).",
     imageSrc: avatar1.src,
-    name: "Jamie Rivera",
-    username: "@jamietechguru00",
+    name: "databreaches",
+    username: "thinkinfo",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool. ",
+    text: "Breach reports include a brief description and severity categorization, enabling informed, immediate actions to secure accounts.",
     imageSrc: avatar2.src,
-    name: "Josh Smith",
-    username: "@jjsmith",
+    name: "databreaches",
+    username: "Thinkinfo",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
+    text: "Built with stringent security measures, the extension ensures all user data is encrypted and processed securely without storing any credentials.",
     imageSrc: avatar3.src,
-    name: "Morgan Lee",
-    username: "@morganleewhiz",
+    name: "data breaches",
+    username: "thinkinfo",
   },
   {
-    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+    text: "Provides real-time alerts when user information appears in new breaches, helping users stay proactive against threats.",
     imageSrc: avatar4.src,
-    name: "Casey Jordan",
-    username: "@caseyj",
+    name: "data breaches",
+    username: "thinkinfo",
   },
   {
-    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+    text: "Empowers users with the knowledge to act quickly, turning data breach alerts into opportunities for enhanced digital hygiene.",
     imageSrc: avatar5.src,
-    name: "Taylor Kim",
-    username: "@taylorkimm",
+    name: "data breaches",
+    username: "thinkinfo",
   },
   {
     text: "The customizability and integration capabilities of this app are top-notch.",
     imageSrc: avatar6.src,
-    name: "Riley Smith",
-    username: "@rileysmith1",
+    name: "data breaches",
+    username: "thinkinfo",
   },
   {
-    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+    text: "Supports users in avoiding identity theft and fraud through timely detection of data leaks and vulnerabilities.",
     imageSrc: avatar7.src,
-    name: "Jordan Patels",
-    username: "@jpatelsdesign",
+    name: "data breaches",
+    username: "thinkinfo",
   },
   {
-    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+    text: "Constantly updates its database integration to ensure users have access to the latest information regarding potential breaches.",
     imageSrc: avatar8.src,
-    name: "Sam Dawson",
-    username: "@dawsontechtips",
+    name: "data breaches",
+    username: "thinkinfo",
   },
   {
-    text: "Its user-friendly interface and robust features support our diverse needs.",
+    text: "Includes a detailed content analysis of breaches, identifying the nature of the breach and the type of data affected.",
     imageSrc: avatar9.src,
-    name: "Casey Harper",
-    username: "@casey09",
+    name: "data breaches",
+    username: "thinkinfo",
   },
 ] as const;
 

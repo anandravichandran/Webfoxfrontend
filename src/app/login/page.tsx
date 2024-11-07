@@ -140,8 +140,11 @@ const Login: React.FC = () => {
           if (response.status === 200) {
             const token = response.data.token;
             console.log('Received token:', token);
-    
-            if (typeof window !== 'undefined' && window.chrome?.storage?.local) {
+            localStorage.setItem("token",token);
+
+            sendTokenToExtension(token);
+
+            if (!!!localStorage.getItem("token")) {
               await setToken(token);
               console.log('Token stored in Chrome storage');
             } else {
@@ -160,6 +163,10 @@ const Login: React.FC = () => {
           setErrors({ ...errors, email: 'Invalid email or password' });
       }
   };
+  function sendTokenToExtension(token: string) {
+    const event = new CustomEvent('sendTokenToExtension', { detail: { token } });
+    window.dispatchEvent(event);
+}
 
 
   return (

@@ -164,6 +164,8 @@ import { cn } from "@/src/utils/cn";
 import { Button } from "@/src/components/ui/MovingBorder";
 
 export const FloatingNav = ({
+
+  
   navItems,
   className,
 }: {
@@ -176,6 +178,19 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
+  const[token,setToken] = useState(localStorage.getItem("token"));
+
+  // logout function
+
+  const logOut = ()=>{
+       localStorage.removeItem("token");
+
+       const event = new CustomEvent('clearTokenFromExtension');
+       window.dispatchEvent(event);
+       setToken(null);
+       console.log("Token removed from localStorage and sent to extension to clear.");
+  }
+
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -245,9 +260,11 @@ export const FloatingNav = ({
         </motion.div>
       </AnimatePresence>
       <div className="fixed top-10 right-10 flex space-x-4 z-[5000]">
-        <Link href="/login">
-          <Button className="border text-sm font-medium border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-3 rounded-full">
-            Login
+        {!!!token ? 
+        <>
+         <Link href="/login">
+          <Button  className="border text-sm font-medium border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-3 rounded-full" >
+           Login
           </Button>
         </Link>
         <Link href="/register">
@@ -255,6 +272,11 @@ export const FloatingNav = ({
             Register
           </Button>
         </Link>
+        </>:
+         <Button className="border text-sm font-medium border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-3 rounded-full" onClick={logOut} >
+         Logout
+         </Button>
+        }
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import { FaLocationArrow, FaRegEnvelope, FaUser,FaLock, FaLockOpen, } from 'reac
 import { FaFacebook, FaLinkedinIn, FaGoogle } from 'react-icons/fa';
 import { MdLockOutline, MdVisibility, MdVisibilityOff } from 'react-icons/md';
 import Link from 'next/link';
+import malbil2 from "@/public/malbil2.png"
 import  {useNavigate}  from 'react-router-dom';
 import email from 'next-auth/providers/email';
 
@@ -19,6 +20,7 @@ interface User {
 }
 
 const Signup: React.FC = () => {
+  const [isLoading,setIsLoading] = useState(false);
   const router = useRouter();
   const [formData, setFormData] = useState<User>({
     name: '',
@@ -182,7 +184,13 @@ const Signup: React.FC = () => {
         return 'text-gray-700';
     }
   };
+  const handleSingInClick = async () => {
+    setIsLoading(true);
 
+    setTimeout(()=> {
+      router.push('/login');
+    },500);
+  }
   return (
     <div className="w-screen h-screen overflow-hidden relative">
       <div>
@@ -203,11 +211,17 @@ const Signup: React.FC = () => {
             <h1 className="text-center text-3xl font-bold mb-2">Join Us Today!!</h1>
             <div className="border-2 w-10 border-pink-900 inline-block mb-2"></div>
             <p className="mb-5 text-center">Creat Your Account And Take The First Step Towards A Safer Online Experiences</p>
-            <p className="translate-y-36">Already Register?Visit the Sign-in page to login to your account start happy Journey</p>
-            <div className="flex justify-center items-center">
-              <Link href="/login">
-                <MagicButton title="Sign In" icon={<FaLocationArrow />} position="left" />
-              </Link>
+            <p className="translate-y-6">Already Register?Visit the Sign-in page to login to your account start happy Journey</p>
+            <div className="flex justify-center items-center translate-y-20">
+              {isLoading ? (
+                <div className="spinner">
+                  <img src ={malbil2.src} alt = "Loading..." width={300} height={300}/>
+                  </div>
+              ) :(
+                <button onClick={handleSingInClick}>
+                   <MagicButton title="Sign In" icon={<FaLocationArrow />} position="left" />
+                </button>
+              )}
             </div>
           </div>
 

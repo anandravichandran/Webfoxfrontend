@@ -12,6 +12,7 @@ import { LoginFloatingNav } from "./ui/LoginFloatingNav";
 import { Button } from "./ui/MovingBorder";
 import { MdLockOutline, MdVisibility, MdVisibilityOff } from 'react-icons/md';
 import axios from 'axios';
+import exp3 from "@/public/exp3.png";
 import "react-toastify/dist/ReactToastify.css" // React Toastify
 import {ToastContainer} from 'react-toastify'; // Import the ToastContainer
 
@@ -68,6 +69,7 @@ const fetchProtectedData = async () => {
   }
 };
 const Login: React.FC = () => {
+  const [isLoading,setIsLoading] = useState(false);
   const router = useRouter(); // For routing after successful login
 
   const [formData, setFormData] = useState<User>({
@@ -167,6 +169,13 @@ const Login: React.FC = () => {
     const event = new CustomEvent('sendTokenToExtension', { detail: { token } });
     window.dispatchEvent(event);
 }
+   const handleSingupClick = async () => {
+    setIsLoading(true);
+    // Add a delay if desired to show the loading state for a moment
+    setTimeout(() => {
+      router.push('register'); //Navigate to the register page
+    },500); // 
+   };
 
 
   return (
@@ -205,19 +214,6 @@ const Login: React.FC = () => {
             <div className="py-10">
               <h2 className="text-3xl font-bold text-blue-950 mb-2">Sign in to Account</h2>
               <div className="border-2 w-10 border-pink-900 inline-block mb-2"></div>
-
-              {/* Social Login */}
-              {/* <div className="flex justify-center my-2">
-                  <a href="#" className="border-2 border-gray-950 rounded-xl rounded-br-xl p-3 mx-1">
-                    <FaFacebook className="text-2xl text-black-100" />
-                  </a>
-                  <a href="#" className="border-2 border-gray-950 rounded-xl rounded-br-xl p-3 mx-1">
-                    <FaLinkedinIn className="text-2xl text-black-100" />
-                  </a>
-                  <a href="#" className="border-2 border-black-200 rounded-br-xl rounded-xl p-3 mx-1">
-                    <FaGoogle className="text-2xl text-black-100" />
-                  </a>
-                </div> */}
 
               {/* <p className="text-gray-950 text-xl text-center mb-3">or use your email account</p> */}
               <form onSubmit={handleSubmit} className="relative rounded-lg max-w-lg m-auto">
@@ -300,12 +296,22 @@ const Login: React.FC = () => {
             <h1 className="text-center text-3xl font-bold mb-2">Good To See You Again!</h1>
             <div className="border-2 w-10 border-pink-900 inline-block mb-2"></div>
             <p className="mb-5 text-center">Your Secure Access Awaits, Your Protections is Just a Click Away</p>
-            <p className="translate-y-36">Not a member yet?Visit the Signu-up to Create Your Account</p>
+            <p className="translate-y-26">Not a member yet?Visit the Signu-up to Create Your Account</p>
             <div className="flex justify-center items-center">
-              <Link href="/register">
-                <MagicButton title="Sign Up" icon={<FaLocationArrow />} position="left" />
+              {isLoading ?(
+                <div className = "spinner translate-y-12"> {/* or use an actual loading image*/}
+                <img src={exp3.src} alt="loading..." width ={200} height={200} />
+                </div>
+              ):( 
+                <button onClick={handleSingupClick}>
+                        <MagicButton title="Sign Up" icon={<FaLocationArrow />} position="left" />
+                </button>
 
-              </Link>
+              )}
+              {/* <Link href="/register">
+                
+
+              </Link> */}
              
             </div>
           </div>

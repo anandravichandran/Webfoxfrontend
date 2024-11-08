@@ -122,9 +122,11 @@ import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Spotlight } from '../login/ui/Spotlight';
 import MagicButton from '../login/ui/MagicButton';
 import { FaLocationArrow, FaFacebook, FaLinkedinIn, FaGoogle } from 'react-icons/fa';
+import malreview4 from '@/public/malreview4.png'
 import { MdLockOutline } from 'react-icons/md';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'; // Ensure you're using 'next/navigation
+// import {useParams} from "react-router-dom"
+import { useRouter,useParams ,useSearchParams} from 'next/navigation'; // Ensure you're using 'next/navigation
 
 interface User {
   new_password: string;
@@ -132,7 +134,11 @@ interface User {
 }
 
 const ResetPasswordPage: React.FC = () => {
+  const[isLoading,setIsLoading] = useState(false);
+
   const router = useRouter();
+  const params = useSearchParams();
+  const email = params.get("email");
   const [user, setUser] = useState<User>({
     new_password: '',
     confirmPassword: '',
@@ -149,12 +155,12 @@ const ResetPasswordPage: React.FC = () => {
   const onResetPassword = async () => {
     try {
       console.log('Resetting password with:', user);
-      const response = await fetch('http://localhost:5000/reset_password', {
+      const response = await fetch('http://localhost:5000/resetpassword', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ new_password: user.new_password }),
+        body: JSON.stringify({email:email, new_password: user.new_password }),
       });
 
       if (!response.ok) {
@@ -192,6 +198,13 @@ const ResetPasswordPage: React.FC = () => {
     onResetPassword();
   };
 
+  const handleFrogotOtpClick = async () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      router.push('/forgototp')
+    },500);
+  }
+
   return (
     <div className="w-screen h-screen relative overflow-hidden">
       <div>
@@ -213,9 +226,18 @@ const ResetPasswordPage: React.FC = () => {
             <div className="border-2 w-10 border-pink-900 inline-block mb-2"></div>
             <p className="mb-5 text-center">Fill up your personal information and start your journey with us</p>
             <div className="flex justify-center items-center">
-              <Link href="forgototp">
+              {isLoading ? (
+                 <div className="Spinning">
+                  <img src ={malreview4.src} alt = "Loading..." width={300} height={300}/>
+                  </div>
+              ):(
+                <button onClick={handleFrogotOtpClick}>
+                <MagicButton title="FrogotOtp" icon={<FaLocationArrow />} position="left" />
+             </button>
+              )}
+              {/* <Link href="forgototp">
                 <MagicButton title="ForgotOTP" icon={<FaLocationArrow />} position="left" />
-              </Link>
+              </Link> */}
             </div>
           </div>
 

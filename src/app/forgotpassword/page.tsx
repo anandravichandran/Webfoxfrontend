@@ -136,8 +136,10 @@
 
 "use client"
 import React, { ChangeEvent, FormEvent, useState } from 'react';
+import { useRouter } from 'next/navigation'; // Import useRouter
 import { Spotlight } from '../login/ui/Spotlight';
 import MagicButton from "../login/ui/MagicButton";
+import maltest3 from "@/public/maltest3.png"
 import { FaLocationArrow, FaRegEnvelope } from "react-icons/fa6";
 import { Button } from "../login/ui/MovingBorder";
 import Link from 'next/link';
@@ -148,7 +150,8 @@ interface FormData {
 
 const Forgetpassword: React.FC = () => {
     const [formData, setFormData] = useState<FormData>({ email: '' });
-
+    const[isLoading,setIsLoading]= useState(false);
+    const router = useRouter();
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -177,6 +180,14 @@ const Forgetpassword: React.FC = () => {
         }
     };
 
+    const handleSignInClick = async () => {
+        setIsLoading(true);
+        setTimeout (() => {
+            router.push('/login')
+        })
+
+    }
+
     return (
         <div className="w-screen h-screen overflow-hidden relative">
             {/* Spotlight and background elements */}
@@ -197,9 +208,9 @@ const Forgetpassword: React.FC = () => {
 
                     {/* Signin Button */}
                     <div className="fixed top-10 right-10 flex space-x-4 z-[5000]">
-                        <Link href="/login">
+                        <Link href="/">
                             <Button className="border text-sm font-medium border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-3 rounded-full">
-                                Signin
+                                Home
                             </Button>
                         </Link>
                     </div>
@@ -248,14 +259,22 @@ const Forgetpassword: React.FC = () => {
                         <h1 className="text-center text-3xl font-bold mb-2">Hey Buddie  s</h1>
                         <div className="border-2 w-10 border-pink-900 inline-block mb-2" />
                         <p className="mb-5 text-center">Cant Crack Your Own Code? Reset Your Password and Get Back to Safety</p>
-                        <p className="translate-y-36">"Aha!!! Password remebered---No need to hit reset!"</p>
-                        <div className="flex justify-center items-center">
-                            <Link href="/login">
-                                <MagicButton
+                        <p className="translate-y-10">"Aha!!! Password remebered---No need to hit reset!"</p>
+                        <div className="flex justify-center items-center translate-y-20">
+                            {isLoading ?(
+                                <div className='spinner'>
+                                    <img src ={maltest3.src} alt = "Loading..." width={300} height={300}/>
+                                 </div>
+                            ) : (
+                                <button onClick={handleSignInClick}>
+                                          <MagicButton
                                     title="Sign In"
                                     icon={<FaLocationArrow />}
-                                    position="left"
-                                />
+                                    position="left"/>
+                                </button>
+                            )}
+                            <Link href="/login">
+                                
                             </Link>
                         </div>
                     </div>

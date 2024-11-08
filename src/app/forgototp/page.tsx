@@ -297,8 +297,9 @@ const Forgototp: React.FC = () => {
   // Handle OTP verification
   const handleSubmitClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    const otpValue = otp.join(''); // Join the OTP array into a string
     try {
-      const response = await fetch('http://localhost:5000/verify_otp', {
+      const response = await fetch('http://localhost:5000/loginotp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -342,7 +343,7 @@ const Forgototp: React.FC = () => {
           {/* Sign Section */}
           <div className="w-3/5 p-5">
             <div className="text-left font-bold">
-              <span className="text-blue-950">Company</span>Name
+              <span className="text-blue-950">WebFoxShield</span>
             </div>
             <div className="py-10">
               <h2 className="text-3xl font-bold text-blue-950 mb-2">User Verification</h2>
